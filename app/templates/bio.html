@@ -1,0 +1,49 @@
+{% extends "base.html" %} {% block content %}
+<section class="bio-section">
+  <div class="container">
+    <h1>About Corey Pellizzi</h1>
+    <div class="bio-container">
+      <div class="bio-image">
+        <img
+          src="{{ url_for('static', filename='images/comedy-square-logo.png') }}"
+          alt="Corey Pellizzi"
+        />
+      </div>
+      <div class="bio-content">
+        <h2>Biography</h2>
+        <p>
+          Corey Pellizzi is a multifaceted creative professional with expertise
+          spanning comedy, music production, filmmaking, and writing. Known for
+          his innovative approach to entertainment and storytelling, Corey has
+          built a diverse portfolio of work that showcases his versatility and
+          unique comedic vision.
+        </p>
+        <h3>Expertise</h3>
+        <ul class="expertise-list">
+          <li>Stand-up Comedy & Performance</li>
+          <li>Music Production & Composition</li>
+          <li>Film & Video Direction</li>
+          <li>Writing & Content Creation</li>
+          <li>Podcast Production</li>
+          <li>Comedy Show Production</li>
+        </ul>
+        <h3>Recent Projects</h3>
+        <ul class="projects-list">
+          <li>
+            <strong>Comedy Stains Podcast</strong> - Co-host of a comedy
+            discussion show exploring the business and art of humor
+          </li>
+          <li>
+            <strong>Super Silly Show</strong> - Host of a variety show with
+            entertainment and comedy
+          </li>
+          <li>
+            <strong>Corky Universe</strong> - Creator of original music and
+            comedy content across multiple platforms
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
