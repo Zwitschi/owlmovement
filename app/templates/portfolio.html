@@ -1,41 +1,41 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "_base.html" %} {% block content %}
 <section class="portfolio-section">
-    <div class="container">
-        <h1>Portfolio</h1>
-        <p class="section-subtitle">A showcase of work across comedy, music, film, and digital media</p>
-        
-        <div class="portfolio-filters">
-            <button class="filter-btn active" data-filter="all">All</button>
-            <button class="filter-btn" data-filter="comedy">Comedy</button>
-            <button class="filter-btn" data-filter="music">Music</button>
-            <button class="filter-btn" data-filter="video">Video</button>
-            <button class="filter-btn" data-filter="podcast">Podcast</button>
-            <button class="filter-btn" data-filter="blog">Blog</button>
-        </div>
+  <div class="container">
+    <h1>Portfolio</h1>
+    <p class="section-subtitle">
+      A showcase of work across comedy, music, film, and digital media
+    </p>
 
-        <div class="portfolio-grid">
-            {% if portfolio_items %}
-                {% for item in portfolio_items %}
-                    <div class="portfolio-item" data-category="{{ item.category }}">
-                        <div class="portfolio-image">
-                            <img src="{{ item.image }}" alt="{{ item.title }}">
-                            <div class="portfolio-overlay">
-                                <a href="{{ item.link }}" target="_blank" class="portfolio-link">View</a>
-                            </div>
-                        </div>
-                        <div class="portfolio-meta">
-                            <h3>{{ item.title }}</h3>
-                            <p class="category-tag">{{ item.category }}</p>
-                            <p class="description">{{ item.description }}</p>
-                        </div>
-                    </div>
-                {% endfor %}
-            {% else %}
-                <p class="no-items">Portfolio items coming soon...</p>
-            {% endif %}
-        </div>
+    <div class="portfolio-filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="comedy">Comedy</button>
+      <button class="filter-btn" data-filter="music">Music</button>
+      <button class="filter-btn" data-filter="video">Video</button>
+      <button class="filter-btn" data-filter="podcast">Podcast</button>
+      <button class="filter-btn" data-filter="blog">Blog</button>
     </div>
+
+    <div class="portfolio-grid">
+      {% if portfolio_items %} {% for item in portfolio_items %}
+      <div class="portfolio-item" data-category="{{ item.category }}">
+        <div class="portfolio-image">
+          <img src="{{ item.image }}" alt="{{ item.title }}" />
+          <div class="portfolio-overlay">
+            <a href="{{ item.link }}" target="_blank" class="portfolio-link"
+              >View</a
+            >
+          </div>
+        </div>
+        <div class="portfolio-meta">
+          <h3>{{ item.title }}</h3>
+          <p class="category-tag">{{ item.category }}</p>
+          <p class="description">{{ item.description }}</p>
+        </div>
+      </div>
+      {% endfor %} {% else %}
+      <p class="no-items">Portfolio items coming soon...</p>
+      {% endif %}
+    </div>
+  </div>
 </section>
 {% endblock %}

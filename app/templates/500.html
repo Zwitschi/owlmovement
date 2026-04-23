@@ -1,14 +1,12 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "_base.html" %} {% block content %}
 <section class="error-section">
-    <div class="container">
-        <div class="error-content">
-            <h1>500</h1>
-            <h2>Server Error</h2>
-            <p>Something went wrong on our end. Please try again later.</p>
-            <a href="{{ url_for('index') }}" class="btn btn-primary">Go Home</a>
-        </div>
+  <div class="container">
+    <div class="error-content">
+      <h1>500</h1>
+      <h2>Server Error</h2>
+      <p>Something went wrong on our end. Please try again later.</p>
+      <a href="{{ url_for('index') }}" class="btn btn-primary">Go Home</a>
     </div>
+  </div>
 </section>
 {% endblock %}

@@ -1,63 +1,84 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "_base.html" %} {% block content %}
 <section class="projects-section">
-    <div class="container">
-        <h1>Projects</h1>
-        <p class="section-subtitle">Current and recent creative projects</p>
+  <div class="container">
+    <h1>Projects</h1>
+    <p class="section-subtitle">Current and recent creative projects</p>
 
-        <div class="projects-list">
-            {% if projects %}
-                {% for project in projects %}
-                    <div class="project-detail">
-                        <div class="project-header">
-                            <h2>{{ project.title }}</h2>
-                            <span class="project-type">{{ project.type }}</span>
-                        </div>
-                        <div class="project-body">
-                            {% if project.image %}
-                                <div class="project-featured-image">
-                                    <img src="{{ project.image }}" alt="{{ project.title }}">
-                                </div>
-                            {% endif %}
-                            <div class="project-description">
-                                <p>{{ project.description }}</p>
-                                {% if project.links %}
-                                    <div class="project-links">
-                                        {% for link_title, link_url in project.links.items() %}
-                                            <a href="{{ link_url }}" target="_blank" class="project-link-btn">{{ link_title }}</a>
-                                        {% endfor %}
-                                    </div>
-                                {% endif %}
-                            </div>
-                        </div>
-                    </div>
-                {% endfor %}
-            {% else %}
-                <p class="no-items">Projects coming soon...</p>
-            {% endif %}
+    <div class="projects-list">
+      {% if projects %} {% for project in projects %}
+      <div class="project-detail">
+        <div class="project-header">
+          <h2>{{ project.title }}</h2>
+          <span class="project-type">{{ project.type }}</span>
         </div>
-
-        <section class="featured-projects-section">
-            <h2>Featured Shows & Collaborations</h2>
-            <div class="featured-grid">
-                <div class="featured-item">
-                    <h3>Comedy Stains</h3>
-                    <p>A podcast exploring the business and art of humor with co-host Dave Sarra</p>
-                    <a href="https://anchor.fm/comedystains" target="_blank" class="btn btn-secondary">Listen Now</a>
-                </div>
-                <div class="featured-item">
-                    <h3>Super Silly Show</h3>
-                    <p>A variety show hosted by Corey and Beefroast featuring comedy and entertainment</p>
-                    <a href="https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube" target="_blank" class="btn btn-secondary">Watch Now</a>
-                </div>
-                <div class="featured-item">
-                    <h3>Music & Sound</h3>
-                    <p>Original music and soundscapes available across streaming platforms</p>
-                    <a href="https://soundcloud.com/owl_movement" target="_blank" class="btn btn-secondary">Listen on SoundCloud</a>
-                </div>
+        <div class="project-body">
+          {% if project.image %}
+          <div class="project-featured-image">
+            <img src="{{ project.image }}" alt="{{ project.title }}" />
+          </div>
+          {% endif %}
+          <div class="project-description">
+            <p>{{ project.description }}</p>
+            {% if project.links %}
+            <div class="project-links">
+              {% for link_title, link_url in project.links.items() %}
+              <a href="{{ link_url }}" target="_blank" class="project-link-btn"
+                >{{ link_title }}</a
+              >
+              {% endfor %}
             </div>
-        </section>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+      {% endfor %} {% else %}
+      <p class="no-items">Projects coming soon...</p>
+      {% endif %}
     </div>
+
+    <section class="featured-projects-section">
+      <h2>Featured Shows & Collaborations</h2>
+      <div class="featured-grid">
+        <div class="featured-item">
+          <h3>Comedy Stains</h3>
+          <p>
+            A podcast exploring the business and art of humor with co-host Dave
+            Sarra
+          </p>
+          <a
+            href="https://anchor.fm/comedystains"
+            target="_blank"
+            class="btn btn-secondary"
+            >Listen Now</a
+          >
+        </div>
+        <div class="featured-item">
+          <h3>Super Silly Show</h3>
+          <p>
+            A variety show hosted by Corey and Beefroast featuring comedy and
+            entertainment
+          </p>
+          <a
+            href="https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube"
+            target="_blank"
+            class="btn btn-secondary"
+            >Watch Now</a
+          >
+        </div>
+        <div class="featured-item">
+          <h3>Music & Sound</h3>
+          <p>
+            Original music and soundscapes available across streaming platforms
+          </p>
+          <a
+            href="https://soundcloud.com/owl_movement"
+            target="_blank"
+            class="btn btn-secondary"
+            >Listen on SoundCloud</a
+          >
+        </div>
+      </div>
+    </section>
+  </div>
 </section>
 {% endblock %}
