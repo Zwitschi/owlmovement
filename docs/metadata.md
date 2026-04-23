@@ -66,7 +66,7 @@ Metadata is organized in `PAGE_METADATA` dictionary with page-specific tags for:
 <meta name="keywords" content="Relevant, keywords, here" />
 <meta name="author" content="Corey Pellizzi" />
 <meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://owlmovement.example.com/page" />
+<link rel="canonical" href="https://coreypellizzi.com/page" />
 ```
 
 ### Open Graph Tags (Facebook, LinkedIn, Pinterest)

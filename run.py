@@ -8,7 +8,8 @@ from config import Config
 
 def create_app():
     """Application factory"""
-    app = Flask(__name__, template_folder='app/templates', static_folder='app/static')
+    app = Flask(__name__, template_folder='app/templates',
+                static_folder='app/static')
     app.config.from_object(Config)
 
     # Sample data - can be replaced with database queries
@@ -179,11 +180,11 @@ def create_app():
             "keywords": "comedian, comedy, producer, musician, director, writer, entertainment, Owl Movement, Comedy Stains",
             "og_title": "Corey Pellizzi - Home",
             "og_description": "Versatile entertainer and content creator featuring comedy, music, podcasts, and creative projects.",
-            "og_image": "https://owlmovement.example.com/static/images/comedy-stains-logo.jpg",
-            "og_url": "https://owlmovement.example.com/",
+            "og_image": "https://coreypellizzi.com/static/images/comedy-stains-logo.jpg",
+            "og_url": "https://coreypellizzi.com/",
             "twitter_card": "summary_large_image",
             "twitter_creator": "@corkycomedynow",
-            "canonical": "https://owlmovement.example.com/"
+            "canonical": "https://coreypellizzi.com/"
         },
         "bio": {
             "title": "About Corey Pellizzi - Biography & Expertise",
@@ -191,11 +192,11 @@ def create_app():
             "keywords": "about, biography, comedian, producer, musician, director, writer, Corey Pellizzi",
             "og_title": "About Corey Pellizzi",
             "og_description": "Discover the creative journey and expertise of Corey Pellizzi.",
-            "og_image": "https://owlmovement.example.com/static/images/comedy-square-logo.png",
-            "og_url": "https://owlmovement.example.com/bio",
+            "og_image": "https://coreypellizzi.com/static/images/comedy-square-logo.png",
+            "og_url": "https://coreypellizzi.com/bio",
             "twitter_card": "summary",
             "twitter_creator": "@corkycomedynow",
-            "canonical": "https://owlmovement.example.com/bio"
+            "canonical": "https://coreypellizzi.com/bio"
         },
         "portfolio": {
             "title": "Portfolio - Comedy, Music, Video & Podcast Projects",
@@ -203,11 +204,11 @@ def create_app():
             "keywords": "portfolio, comedy, music, video, podcast, blog, projects, content, entertainment",
             "og_title": "Portfolio & Creative Works",
             "og_description": "Browse comedy, music, video, and podcast projects from Corey Pellizzi.",
-            "og_image": "https://owlmovement.example.com/static/images/super-silly-show-logo.png",
-            "og_url": "https://owlmovement.example.com/portfolio",
+            "og_image": "https://coreypellizzi.com/static/images/super-silly-show-logo.png",
+            "og_url": "https://coreypellizzi.com/portfolio",
             "twitter_card": "summary_large_image",
             "twitter_creator": "@corkycomedynow",
-            "canonical": "https://owlmovement.example.com/portfolio"
+            "canonical": "https://coreypellizzi.com/portfolio"
         },
         "projects": {
             "title": "Projects - Podcasts, Shows, Music & More",
@@ -215,11 +216,11 @@ def create_app():
             "keywords": "projects, podcast, show, music, video, Comedy Stains, Super Silly Show, Owl Movement",
             "og_title": "Featured Projects",
             "og_description": "Explore Comedy Stains Podcast, Super Silly Show, and other creative projects.",
-            "og_image": "https://owlmovement.example.com/static/images/comedy-stains-logo.jpg",
-            "og_url": "https://owlmovement.example.com/projects",
+            "og_image": "https://coreypellizzi.com/static/images/comedy-stains-logo.jpg",
+            "og_url": "https://coreypellizzi.com/projects",
             "twitter_card": "summary_large_image",
             "twitter_creator": "@corkycomedynow",
-            "canonical": "https://owlmovement.example.com/projects"
+            "canonical": "https://coreypellizzi.com/projects"
         },
         "contact": {
             "title": "Contact - Get In Touch With Corey Pellizzi",
@@ -227,11 +228,11 @@ def create_app():
             "keywords": "contact, email, social media, collaboration, inquiries, support, Corey Pellizzi",
             "og_title": "Contact Corey Pellizzi",
             "og_description": "Get in touch with Corey Pellizzi for collaborations and inquiries.",
-            "og_image": "https://owlmovement.example.com/static/images/comedy-square-logo.png",
-            "og_url": "https://owlmovement.example.com/contact",
+            "og_image": "https://coreypellizzi.com/static/images/comedy-square-logo.png",
+            "og_url": "https://coreypellizzi.com/contact",
             "twitter_card": "summary",
             "twitter_creator": "@corkycomedynow",
-            "canonical": "https://owlmovement.example.com/contact"
+            "canonical": "https://coreypellizzi.com/contact"
         }
     }
 
