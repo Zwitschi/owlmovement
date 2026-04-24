@@ -18,7 +18,7 @@ def create_app():
             "title": "Open Mic Odyssey",
             "description": "Three best friends embark on an outrageous adventure.",
             "image": "/static/images/thumbnail_for_odyssey.png",
-            "link": "https://openmiccomedy.com/"
+            "link": "https://openmicodyssey.com/"
         },
         {
             "title": "Super Silly Show",
@@ -40,7 +40,7 @@ def create_app():
             "category": "video",
             "description": "Three best friends embark on an outrageous adventure in this comedy sketch.",
             "image": "/static/images/thumbnail_for_odyssey.png",
-            "link": "https://openmiccomedy.com/"
+            "link": "https://openmicodyssey.com/"
         },
         {
             "title": "Comedy Stains",
