@@ -22,7 +22,7 @@ FEATURED_PROJECTS = [
         "title": "Super Silly Show",
         "description": "Join Corky and Beefroast as they host a variety show like no other! Weekly comedy and entertainment.",
         "image": "/static/images/super-silly-show-logo.png",
-        "link": "https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube"
+        "link": "https://www.youtube.com/razzamatazzification"
     },
     {
         "title": "Owl Movement Music",
@@ -45,7 +45,7 @@ PORTFOLIO_ITEMS = [
         "category": "comedy",
         "description": "Weekly variety show with Corky and Beefroast",
         "image": "/static/images/super-silly-show-logo.png",
-        "link": "https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube"
+        "link": "https://www.youtube.com/razzamatazzification"
     },
     {
         "title": "The Ding-Dong Show",
@@ -55,7 +55,7 @@ PORTFOLIO_ITEMS = [
         "link": "https://www.youtube.com/coreyowl"
     },
     {
-        "title": "Corky Music Collection",
+        "title": "Owl Movement Collection",
         "category": "music",
         "description": "Original compositions and soundscapes",
         "image": "/static/images/corky-eye-pizza.gif",
@@ -126,7 +126,7 @@ PROJECTS = [
         "description": "Join Corky and Beefroast as they host a variety show like no other! A weekly show featuring comedy, music, and entertainment. Available on multiple platforms including YouTube, Facebook, Twitter, Instagram, and SoundCloud.",
         "image": "/static/images/super-silly-show-logo.png",
         "links": {
-            "YouTube": "https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube",
+            "YouTube": "https://www.youtube.com/razzamatazzification",
             "Facebook": "https://www.facebook.com/supersillyshow",
             "Twitter": "https://www.twitter.com/supersillyshow",
             "Instagram": "https://www.instagram.com/supersillysundayshow",

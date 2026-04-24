@@ -15,16 +15,16 @@ def create_app():
     # Sample data - can be replaced with database queries
     FEATURED_PROJECTS = [
         {
-            "title": "Comedy Stains Podcast",
-            "description": "A podcast where two fully grown adults discuss the business and art of humor. Co-hosted with Dave Sarra.",
-            "image": "/static/images/comedy-stains-logo.jpg",
-            "link": "https://anchor.fm/comedystains"
+            "title": "Open Mic Odyssey",
+            "description": "Three best friends embark on an outrageous adventure.",
+            "image": "/static/images/thumbnail_for_odyssey.png",
+            "link": "https://openmiccomedy.com/"
         },
         {
             "title": "Super Silly Show",
             "description": "Join Corky and Beefroast as they host a variety show like no other! Weekly comedy and entertainment.",
             "image": "/static/images/super-silly-show-logo.png",
-            "link": "https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube"
+            "link": "https://www.youtube.com/razzamatazzification"
         },
         {
             "title": "Owl Movement Music",
@@ -35,6 +35,13 @@ def create_app():
     ]
 
     PORTFOLIO_ITEMS = [
+        {
+            "title": "Open Mic Odyssey",
+            "category": "video",
+            "description": "Three best friends embark on an outrageous adventure in this comedy sketch.",
+            "image": "/static/images/thumbnail_for_odyssey.png",
+            "link": "https://openmiccomedy.com/"
+        },
         {
             "title": "Comedy Stains",
             "category": "podcast",
@@ -47,7 +54,7 @@ def create_app():
             "category": "comedy",
             "description": "Weekly variety show with Corky and Beefroast",
             "image": "/static/images/super-silly-show-logo.png",
-            "link": "https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube"
+            "link": "https://www.youtube.com/razzamatazzification"
         },
         {
             "title": "The Ding-Dong Show",
@@ -57,32 +64,11 @@ def create_app():
             "link": "https://www.youtube.com/coreyowl"
         },
         {
-            "title": "Corky Music Collection",
+            "title": "Owl Movement Collection",
             "category": "music",
             "description": "Original compositions and soundscapes",
             "image": "/static/images/corky-eye-pizza.gif",
             "link": "https://soundcloud.com/owl_movement"
-        },
-        {
-            "title": "Getting Caught Up",
-            "category": "blog",
-            "description": "Blog post from July 9, 2022 about uploading music from the Corkyverse",
-            "image": "/static/images/getting-caught-up.jpg",
-            "link": "https://owlmovement.wixsite.com/coreycomedy/post/getting-caught-up"
-        },
-        {
-            "title": "The Stains of Comedy",
-            "category": "blog",
-            "description": "Blog post from April 14, 2021 discussing the Comedy Stains podcast",
-            "image": "/static/images/stains-of-comedy.png",
-            "link": "https://owlmovement.wixsite.com/coreycomedy/post/the-stains-of-comedy"
-        },
-        {
-            "title": "New Beginnings and Old Endings",
-            "category": "blog",
-            "description": "Blog post from March 5, 2021 about change and renewal",
-            "image": "/static/images/new-beginnings-and-old-endings.jpg",
-            "link": "https://owlmovement.wixsite.com/coreycomedy/post/new-beginnings-and-old-endings"
         },
         {
             "title": "Supersillyshow Music",
@@ -116,7 +102,7 @@ def create_app():
             "description": "Join Corky and Beefroast as they host a variety show like no other! A weekly show featuring comedy, music, and entertainment. Available on multiple platforms including YouTube, Facebook, Twitter, Instagram, and SoundCloud.",
             "image": "/static/images/super-silly-show-logo.png",
             "links": {
-                "YouTube": "https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube",
+                "YouTube": "https://www.youtube.com/razzamatazzification",
                 "Facebook": "https://www.facebook.com/supersillyshow",
                 "Twitter": "https://www.twitter.com/supersillyshow",
                 "Instagram": "https://www.instagram.com/supersillysundayshow",

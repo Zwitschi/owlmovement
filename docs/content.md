@@ -70,7 +70,7 @@ This section documents all discovered content from the Corey Pellizzi website cr
 - Social media links:
   - Facebook: https://www.facebook.com/supersillyshow
   - Twitter: https://www.twitter.com/supersillyshow
-  - YouTube: https://www.youtube.com/c/SimplyDonThePodcastNetworkYoutube
+  - YouTube: https://www.youtube.com/razzamatazzification
   - Instagram: https://www.instagram.com/supersillysundayshow
   - SoundCloud: https://soundcloud.com/supersillyshow
 
