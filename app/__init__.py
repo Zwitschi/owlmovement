@@ -93,6 +93,18 @@ PORTFOLIO_ITEMS = [
 
 PROJECTS = [
     {
+        "title": "Open Mic Odyssey",
+        "type": "Documentary Film",
+        "description": "Three best friends embark on an outrageous adventure.",
+        "image": "/static/images/thumbnail_for_odyssey.png",
+        "links": {
+            "Official Website": "https://openmicodyssey.com",
+            "Patreon": "https://www.patreon.com/openmicodyssey",
+            "YouTube Channel": "https://www.youtube.com/@openmicodyssey",
+            "Instagram": "https://www.instagram.com/openmicodyssey"
+        }
+    },
+    {
         "title": "Comedy Stains Podcast",
         "type": "Podcast",
         "description": "A podcast where two fully grown adults discuss the business and art of humor. Co-hosted with LA comedian Dave Sarra. Featuring deep dives into comedy, entertainment industry insights, and candid conversations about performing arts.",
@@ -210,11 +222,11 @@ PAGE_METADATA = {
     },
     "projects": {
         "title": "Projects - Podcasts, Shows, Music & More",
-        "description": "Discover featured projects including Comedy Stains Podcast, Super Silly Show, original music, video content, and merchandise.",
-        "keywords": "projects, podcast, show, music, video, Comedy Stains, Super Silly Show, Owl Movement",
+        "description": "Discover featured projects including Open Mic Odyssey, Super Silly Show, original music, video content, and merchandise.",
+        "keywords": "projects, podcast, show, music, video, Open Mic Odyssey, Super Silly Show, Owl Movement",
         "og_title": "Featured Projects",
-        "og_description": "Explore Comedy Stains Podcast, Super Silly Show, and other creative projects.",
-        "og_image": "https://coreypellizzi.com/static/images/comedy-stains-logo.jpg",
+        "og_description": "Explore Open Mic Odyssey, Super Silly Show, and other creative projects.",
+        "og_image": "https://coreypellizzi.com/static/images/thumbnail_for_odyssey.png",
         "og_url": "https://coreypellizzi.com/projects",
         "twitter_card": "summary_large_image",
         "twitter_creator": "@corkycomedynow",
