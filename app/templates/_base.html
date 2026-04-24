@@ -53,32 +53,7 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar">
-      <div class="navbar-container">
-        <div class="logo">
-          <a href="{{ url_for('index') }}">
-            <img
-              src="{{ url_for('static', filename='images/logo.svg') }}"
-              alt="Corey Pellizzi Logo"
-              class="logo-img"
-            />
-          </a>
-        </div>
-        <ul class="nav-menu">
-          <li><a href="{{ url_for('index') }}" class="nav-link">HOME</a></li>
-          <li><a href="{{ url_for('bio') }}" class="nav-link">BIO</a></li>
-          <li>
-            <a href="{{ url_for('portfolio') }}" class="nav-link">PORTFOLIO</a>
-          </li>
-          <li>
-            <a href="{{ url_for('projects') }}" class="nav-link">PROJECTS</a>
-          </li>
-          <li>
-            <a href="{{ url_for('contact') }}" class="nav-link">CONTACT</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <nav class="navbar">{% include '_nav.html' %}</nav>
 
     <!-- Main Content -->
     <main class="main-content">{% block content %}{% endblock %}</main>

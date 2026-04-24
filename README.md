@@ -79,25 +79,110 @@ The Flask application provides the following routes:
 
 ### Data Management
 
-Currently, all data (featured projects, portfolio items, projects) is defined as Python dictionaries in the `run.py` file. These can be replaced with:
+All dynamic content (projects, portfolio items, social links) is stored in **content.json** for easy management without modifying code. Page metadata (SEO tags) is stored separately in **metadata.json**. The Flask application loads both JSON files at startup.
 
-- Database queries (SQLAlchemy + SQLite/PostgreSQL)
-- JSON files
-- External APIs
-- Content management system
+#### content.json Structure
 
-Example data structure for projects:
+The `content.json` file contains five main sections:
 
-```python
-FEATURED_PROJECTS = [
-    {
-        "title": "Project Name",
-        "description": "Brief description",
-        "image": "/static/images/project.jpg",
-        "link": "https://external-link.com"
-    }
-]
+##### 1. **featured_projects**
+
+Projects highlighted on the home and projects pages. Each project includes:
+
+```json
+{
+  "title": "Project Name",
+  "description": "Brief description of the project",
+  "image": "/static/images/project-image.jpg",
+  "link": "https://external-link.com"
+}
 ```
+
+##### 2. **portfolio_items**
+
+Portfolio gallery items with multi-category support. Each item includes:
+
+```json
+{
+  "title": "Portfolio Item Name",
+  "categories": ["music", "video"],
+  "description": "Item description",
+  "image": "/static/images/portfolio-image.jpg",
+  "link": "https://external-link.com"
+}
+```
+
+**Available categories:** `comedy`, `music`, `video`, `podcast`
+
+##### 3. **projects**
+
+Detailed project pages with multiple links. Each project includes:
+
+```json
+{
+  "title": "Project Name",
+  "type": "Project Type (e.g., Podcast, Show, Music Production)",
+  "description": "Detailed project description",
+  "image": "/static/images/project-image.jpg",
+  "links": {
+    "Link Label": "https://external-link.com",
+    "Another Link": "https://another-link.com"
+  }
+}
+```
+
+##### 4. **social_media**
+
+Social media links displayed in footer and contact page:
+
+````json
+{
+##### 5. **social_media**
+
+Social media links displayed in footer and contact page:
+
+```json
+{
+  "platform_name": "https://platform-url.com/profile"
+}
+````
+
+#### metadata.json Structure
+
+Page metadata (SEO tags) for each route is stored in a separate **metadata.json** file. This keeps content and metadata organized for better SEO management.
+
+The `metadata.json` file contains an entry for each page with the following structure:
+
+```json
+{
+  "page_name": {
+    "title": "Page Title",
+    "description": "Page description for meta tags",
+    "keywords": "keyword1, keyword2, keyword3",
+    "og_title": "OpenGraph title",
+    "og_description": "OpenGraph description",
+    "og_image": "https://image-url.com/image.jpg",
+    "og_url": "https://page-url.com",
+    "twitter_card": "summary_large_image",
+    "twitter_creator": "@twitter_handle",
+    "canonical": "https://canonical-url.com"
+  }
+}
+```
+
+**Page names:** `index`, `bio`, `portfolio`, `projects`, `contact`
+
+#### Editing content.json and metadata.json
+
+To add or update content:
+
+1. For content (projects, portfolio, social links): Open `content.json` in your text editor
+2. For metadata (SEO tags): Open `metadata.json` in your text editor
+3. Locate the relevant section and add or modify entries following the structures documented above
+4. Restart the Flask application for changes to take effect
+5. Run `python generate_static.py` to update the static site
+
+**Note:** Ensure the JSON files are valid by checking syntax (balanced braces, proper quotes, commas)
 
 ### Static Assets
 

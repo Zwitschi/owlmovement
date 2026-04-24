@@ -1,31 +1,24 @@
 {% extends "_base.html" %} {% block content %}
 <section class="bio-section">
   <div class="container">
-    <h1>About Corey Pellizzi</h1>
+    <h1>About {{ bio.name }}</h1>
     <div class="bio-container">
       <div class="bio-image">
         <img
-          src="{{ url_for('static', filename='images/comedy-square-logo.png') }}"
-          alt="Corey Pellizzi"
+          src="{{ url_for('static', filename=bio.image) }}"
+          alt="{{ bio.image_alt }}"
         />
       </div>
       <div class="bio-content">
-        <h2>Biography</h2>
-        <p>
-          Corey Pellizzi is a multifaceted creative professional with expertise
-          spanning comedy, music production, filmmaking, and writing. Known for
-          his innovative approach to entertainment and storytelling, Corey has
-          built a diverse portfolio of work that showcases his versatility and
-          unique comedic vision.
-        </p>
+        <h2>{{ bio.heading }}</h2>
+        {% for paragraph in bio.paragraphs %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
         <h3>Expertise</h3>
         <ul class="expertise-list">
-          <li>Stand-up Comedy & Performance</li>
-          <li>Music Production & Composition</li>
-          <li>Film & Video Direction</li>
-          <li>Writing & Content Creation</li>
-          <li>Podcast Production</li>
-          <li>Comedy Show Production</li>
+          {% for item in bio.expertise %}
+          <li>{{ item }}</li>
+          {% endfor %}
         </ul>
         <h3>Recent Projects</h3>
         {% if featured_projects %}

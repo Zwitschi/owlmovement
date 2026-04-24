@@ -1,0 +1,62 @@
+{
+  "index": {
+    "title": "Corey Pellizzi - Comedian, Producer, Musician & Director",
+    "description": "Welcome to the official website of Corey Pellizzi, a versatile entertainer and content creator. Explore comedy, music, podcasts, and creative projects.",
+    "keywords": "comedian, comedy, producer, musician, director, writer, entertainment, Owl Movement, Comedy Stains",
+    "og_title": "Corey Pellizzi - Home",
+    "og_description": "Versatile entertainer and content creator featuring comedy, music, podcasts, and creative projects.",
+    "og_image": "https://coreypellizzi.com/static/images/comedy-stains-logo.jpg",
+    "og_url": "https://coreypellizzi.com/",
+    "twitter_card": "summary_large_image",
+    "twitter_creator": "@corkycomedynow",
+    "canonical": "https://coreypellizzi.com/"
+  },
+  "bio": {
+    "title": "About Corey Pellizzi - Biography & Expertise",
+    "description": "Learn about Corey Pellizzi's journey as a comedian, producer, musician, director, and writer. Discover his expertise and recent creative projects.",
+    "keywords": "about, biography, comedian, producer, musician, director, writer, Corey Pellizzi",
+    "og_title": "About Corey Pellizzi",
+    "og_description": "Discover the creative journey and expertise of Corey Pellizzi.",
+    "og_image": "https://coreypellizzi.com/static/images/comedy-square-logo.png",
+    "og_url": "https://coreypellizzi.com/bio",
+    "twitter_card": "summary",
+    "twitter_creator": "@corkycomedynow",
+    "canonical": "https://coreypellizzi.com/bio"
+  },
+  "portfolio": {
+    "title": "Portfolio - Comedy, Music, Video & Podcast Projects",
+    "description": "Explore a comprehensive portfolio of comedy sketches, music, videos, podcasts, and blog content across multiple categories and platforms.",
+    "keywords": "portfolio, comedy, music, video, podcast, projects, content, entertainment",
+    "og_title": "Portfolio & Creative Works",
+    "og_description": "Browse comedy, music, video, and podcast projects from Corey Pellizzi.",
+    "og_image": "https://coreypellizzi.com/static/images/super-silly-show-logo.png",
+    "og_url": "https://coreypellizzi.com/portfolio",
+    "twitter_card": "summary_large_image",
+    "twitter_creator": "@corkycomedynow",
+    "canonical": "https://coreypellizzi.com/portfolio"
+  },
+  "projects": {
+    "title": "Projects - Podcasts, Shows, Music & More",
+    "description": "Discover featured projects including Comedy Stains Podcast, Super Silly Show, original music, video content, and merchandise.",
+    "keywords": "projects, podcast, show, music, video, Comedy Stains, Super Silly Show, Owl Movement",
+    "og_title": "Featured Projects",
+    "og_description": "Explore Comedy Stains Podcast, Super Silly Show, and other creative projects.",
+    "og_image": "https://coreypellizzi.com/static/images/comedy-stains-logo.jpg",
+    "og_url": "https://coreypellizzi.com/projects",
+    "twitter_card": "summary_large_image",
+    "twitter_creator": "@corkycomedynow",
+    "canonical": "https://coreypellizzi.com/projects"
+  },
+  "contact": {
+    "title": "Contact - Get In Touch With Corey Pellizzi",
+    "description": "Contact Corey Pellizzi for collaborations, inquiries, or support. Find social media links, merchandise, and multiple ways to connect.",
+    "keywords": "contact, email, social media, collaboration, inquiries, support, Corey Pellizzi",
+    "og_title": "Contact Corey Pellizzi",
+    "og_description": "Get in touch with Corey Pellizzi for collaborations and inquiries.",
+    "og_image": "https://coreypellizzi.com/static/images/comedy-square-logo.png",
+    "og_url": "https://coreypellizzi.com/contact",
+    "twitter_card": "summary",
+    "twitter_creator": "@corkycomedynow",
+    "canonical": "https://coreypellizzi.com/contact"
+  }
+}

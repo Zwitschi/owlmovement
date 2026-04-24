@@ -2,15 +2,32 @@
 Main application entry point
 """
 
+import json
+from pathlib import Path
 from flask import Flask, render_template, request, jsonify
 from config import Config
-from app.data import (
-    FEATURED_PROJECTS,
-    PORTFOLIO_ITEMS,
-    PROJECTS,
-    SOCIAL_MEDIA,
-    PAGE_METADATA,
-)
+
+
+def load_content():
+    """Load content data from content.json"""
+    content_file = Path(__file__).parent / 'content.json'
+    with open(content_file, 'r') as f:
+        data = json.load(f)
+    return (
+        data['featured_projects'],
+        data['portfolio_items'],
+        data['projects'],
+        data['social_media'],
+        data['bio'],
+        data['contact_links'],
+    )
+
+
+def load_metadata():
+    """Load page metadata from metadata.json"""
+    metadata_file = Path(__file__).parent / 'metadata.json'
+    with open(metadata_file, 'r') as f:
+        return json.load(f)
 
 
 def create_app():
@@ -18,6 +35,16 @@ def create_app():
     app = Flask(__name__, template_folder='app/templates',
                 static_folder='app/static')
     app.config.from_object(Config)
+
+    # Load content data from JSON files
+    (FEATURED_PROJECTS,
+     PORTFOLIO_ITEMS,
+     PROJECTS,
+     SOCIAL_MEDIA,
+     BIO,
+     CONTACT_LINKS) = load_content()
+
+    PAGE_METADATA = load_metadata()
 
     # Routes
     @app.route('/')
@@ -37,6 +64,7 @@ def create_app():
         return render_template('bio.html',
                                title=meta.get('title', 'About'),
                                meta=meta,
+                               bio=BIO,
                                featured_projects=FEATURED_PROJECTS,
                                social_media=SOCIAL_MEDIA)
 
@@ -72,6 +100,7 @@ def create_app():
         return render_template('contact.html',
                                title=meta.get('title', 'Contact'),
                                meta=meta,
+                               contact_links=CONTACT_LINKS,
                                social_media=SOCIAL_MEDIA)
 
     @app.errorhandler(404)

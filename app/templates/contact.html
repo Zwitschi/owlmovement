@@ -39,69 +39,19 @@
         <h2>Connect</h2>
         <p>Reach out through any of my social media channels:</p>
 
+        {% for group in contact_links %}
         <div class="social-links-expanded">
-          <h3>Social Media</h3>
+          <h3>{{ group.heading }}</h3>
+          {% if group.intro %}<p>{{ group.intro }}</p>{% endif %}
           <ul>
+            {% for link in group.links %}
             <li>
-              <a href="https://instagram.com/owlmovement" target="_blank"
-                >Instagram: @owlmovement</a
-              >
+              <a href="{{ link.url }}" target="_blank">{{ link.label }}</a>
             </li>
-            <li>
-              <a href="https://twitter.com/corkycomedynow" target="_blank"
-                >Twitter: @corkycomedynow</a
-              >
-            </li>
-            <li>
-              <a href="https://facebook.com/corkycomedynow" target="_blank"
-                >Facebook: Corky Comedy</a
-              >
-            </li>
-            <li>
-              <a href="https://youtube.com/coreyowl" target="_blank"
-                >YouTube: Coreyowl</a
-              >
-            </li>
+            {% endfor %}
           </ul>
         </div>
-
-        <div class="social-links-expanded">
-          <h3>Support</h3>
-          <p>If you'd like to support my work:</p>
-          <ul>
-            <li>
-              <a href="https://ko-fi.com/corky" target="_blank"
-                >Ko-Fi: Support on Ko-Fi</a
-              >
-            </li>
-            <li>
-              <a href="https://corkstore.myspreadshop.com/" target="_blank"
-                >Shop: Corky Merchandise Store</a
-              >
-            </li>
-          </ul>
-        </div>
-
-        <div class="additional-links">
-          <h3>More Platforms</h3>
-          <ul>
-            <li>
-              <a href="https://www.imdb.com/name/nm3869184/" target="_blank"
-                >IMDb Profile</a
-              >
-            </li>
-            <li>
-              <a href="https://soundcloud.com/owl_movement" target="_blank"
-                >SoundCloud</a
-              >
-            </li>
-            <li>
-              <a href="https://www.twitch.tv/officialbroadcast" target="_blank"
-                >Twitch</a
-              >
-            </li>
-          </ul>
-        </div>
+        {% endfor %}
       </div>
     </div>
   </div>
