@@ -28,20 +28,20 @@
           <li>Comedy Show Production</li>
         </ul>
         <h3>Recent Projects</h3>
+        {% if featured_projects %}
         <ul class="projects-list">
+          {% for project in featured_projects %}
           <li>
-            <strong>Open Mic Odyssey</strong> - Director, producer and editor of
-            a documentary film
+            <strong>
+              {% if project.link %}<a href="{{ project.link }}" target="_blank"
+                >{{ project.title }}</a
+              >{% else %}{{ project.title }}{% endif %}
+            </strong>
+            - {{ project.description }}
           </li>
-          <li>
-            <strong>Super Silly Show</strong> - Host of a variety show with
-            entertainment and comedy
-          </li>
-          <li>
-            <strong>Corky Universe</strong> - Creator of original music and
-            comedy content across multiple platforms
-          </li>
+          {% endfor %}
         </ul>
+        {% endif %}
       </div>
     </div>
   </div>

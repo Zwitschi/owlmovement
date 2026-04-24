@@ -36,49 +36,31 @@
       {% endif %}
     </div>
 
+    {% if featured_projects %}
     <section class="featured-projects-section">
       <h2>Featured Shows & Collaborations</h2>
       <div class="featured-grid">
+        {% for item in featured_projects %}
         <div class="featured-item">
-          <h3>Comedy Stains</h3>
-          <p>
-            A podcast exploring the business and art of humor with co-host Dave
-            Sarra
-          </p>
-          <a
-            href="https://anchor.fm/comedystains"
-            target="_blank"
-            class="btn btn-secondary"
-            >Listen Now</a
+          {% if item.image %}
+          <img
+            src="{{ item.image }}"
+            alt="{{ item.title }}"
+            class="featured-item-image"
+          />
+          {% endif %}
+          <h3>{{ item.title }}</h3>
+          <p>{{ item.description }}</p>
+          {% if item.link %}
+          <a href="{{ item.link }}" target="_blank" class="btn btn-secondary"
+            >Learn More</a
           >
+          {% endif %}
         </div>
-        <div class="featured-item">
-          <h3>Super Silly Show</h3>
-          <p>
-            A variety show hosted by Corey and Beefroast featuring comedy and
-            entertainment
-          </p>
-          <a
-            href="https://www.youtube.com/razzamatazzification"
-            target="_blank"
-            class="btn btn-secondary"
-            >Watch Now</a
-          >
-        </div>
-        <div class="featured-item">
-          <h3>Music & Sound</h3>
-          <p>
-            Original music and soundscapes available across streaming platforms
-          </p>
-          <a
-            href="https://soundcloud.com/owl_movement"
-            target="_blank"
-            class="btn btn-secondary"
-            >Listen on SoundCloud</a
-          >
-        </div>
+        {% endfor %}
       </div>
     </section>
+    {% endif %}
   </div>
 </section>
 {% endblock %}

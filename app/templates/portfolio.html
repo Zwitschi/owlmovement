@@ -12,12 +12,14 @@
       <button class="filter-btn" data-filter="music">Music</button>
       <button class="filter-btn" data-filter="video">Video</button>
       <button class="filter-btn" data-filter="podcast">Podcast</button>
-      <button class="filter-btn" data-filter="blog">Blog</button>
     </div>
 
     <div class="portfolio-grid">
       {% if portfolio_items %} {% for item in portfolio_items %}
-      <div class="portfolio-item" data-category="{{ item.category }}">
+      <div
+        class="portfolio-item"
+        data-category="{{ item.categories | join(' ') }}"
+      >
         <div class="portfolio-image">
           <img src="{{ item.image }}" alt="{{ item.title }}" />
           <div class="portfolio-overlay">
@@ -28,7 +30,7 @@
         </div>
         <div class="portfolio-meta">
           <h3>{{ item.title }}</h3>
-          <p class="category-tag">{{ item.category }}</p>
+          <p class="category-tag">{{ item.categories | join(', ') }}</p>
           <p class="description">{{ item.description }}</p>
         </div>
       </div>

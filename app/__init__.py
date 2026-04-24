@@ -35,56 +35,35 @@ FEATURED_PROJECTS = [
 PORTFOLIO_ITEMS = [
     {
         "title": "Comedy Stains",
-        "category": "podcast",
+        "categories": ["podcast"],
         "description": "Co-hosted podcast with Dave Sarra about comedy and humor",
         "image": "/static/images/comedy-stains-logo.jpg",
         "link": "https://anchor.fm/comedystains"
     },
     {
         "title": "Super Silly Sunday Show",
-        "category": "comedy",
+        "categories": ["comedy", "video"],
         "description": "Weekly variety show with Corky and Beefroast",
         "image": "/static/images/super-silly-show-logo.png",
         "link": "https://www.youtube.com/razzamatazzification"
     },
     {
         "title": "The Ding-Dong Show",
-        "category": "video",
+        "categories": ["video", "comedy"],
         "description": "Live show content and performances",
         "image": "/static/images/ding-dong-show-thumbnail.jpg",
         "link": "https://www.youtube.com/coreyowl"
     },
     {
         "title": "Owl Movement Collection",
-        "category": "music",
+        "categories": ["music"],
         "description": "Original compositions and soundscapes",
         "image": "/static/images/corky-eye-pizza.gif",
         "link": "https://soundcloud.com/owl_movement"
     },
     {
-        "title": "Getting Caught Up",
-        "category": "blog",
-        "description": "Blog post from July 9, 2022 about uploading music from the Corkyverse",
-        "image": "/static/images/getting-caught-up.jpg",
-        "link": "https://owlmovement.wixsite.com/coreycomedy/post/getting-caught-up"
-    },
-    {
-        "title": "The Stains of Comedy",
-        "category": "blog",
-        "description": "Blog post from April 14, 2021 discussing the Comedy Stains podcast",
-        "image": "/static/images/stains-of-comedy.png",
-        "link": "https://owlmovement.wixsite.com/coreycomedy/post/the-stains-of-comedy"
-    },
-    {
-        "title": "New Beginnings and Old Endings",
-        "category": "blog",
-        "description": "Blog post from March 5, 2021 about change and renewal",
-        "image": "/static/images/new-beginnings-and-old-endings.jpg",
-        "link": "https://owlmovement.wixsite.com/coreycomedy/post/new-beginnings-and-old-endings"
-    },
-    {
         "title": "Supersillyshow Music",
-        "category": "music",
+        "categories": ["music", "comedy"],
         "description": "Music from Corky Time and Super Silly Sunday Show on SoundCloud",
         "image": "/static/images/comedy-square-logo.png",
         "link": "https://soundcloud.com/supersillyshow"
@@ -265,6 +244,7 @@ def bio():
     return render_template('bio.html',
                            title=meta.get('title', 'About'),
                            meta=meta,
+                           featured_projects=FEATURED_PROJECTS,
                            social_media=SOCIAL_MEDIA)
 
 
@@ -287,6 +267,7 @@ def projects():
                            title=meta.get('title', 'Projects'),
                            meta=meta,
                            projects=PROJECTS,
+                           featured_projects=FEATURED_PROJECTS,
                            social_media=SOCIAL_MEDIA)
 
 
