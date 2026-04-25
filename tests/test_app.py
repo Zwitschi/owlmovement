@@ -201,6 +201,19 @@ class TestPageContent:
         # Check for project-related content
         assert 'Comedy Stains' in data or 'project' in data.lower()
 
+    def test_projects_featured_section_precedes_project_list(self, client):
+        """Test that featured projects render before the full project list."""
+        response = client.get('/projects')
+        assert response.status_code == 200
+        data = response.data.decode('utf-8')
+
+        featured_index = data.find('featured-projects-section')
+        project_list_index = data.find('projects-list')
+
+        assert featured_index != -1
+        assert project_list_index != -1
+        assert featured_index < project_list_index
+
     def test_bio_has_biography_content(self, client):
         """Test that bio page has biography content."""
         response = client.get('/bio')
