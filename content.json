@@ -165,7 +165,6 @@
       "title": "Comedy Videos & Content",
       "type": "Video Content",
       "description": "Comedy sketches, performances, and other video content available on YouTube. Features live shows, vlogs, interviews, and various entertainment media.",
-      "image": "/static/images/ding-dong-show-thumbnail.jpg",
       "links": {
         "Main YouTube Channel": "https://www.youtube.com/coreyowl",
         "Corkytube": "https://www.youtube.com/user/Razzamatazzification"
@@ -175,7 +174,6 @@
       "title": "Super Silly Show",
       "type": "Variety Show",
       "description": "Join Corky and Beefroast as they host a variety show like no other! A weekly show featuring comedy, music, and entertainment. Available on multiple platforms including YouTube, Facebook, Twitter, Instagram, and SoundCloud.",
-      "image": "/static/images/super-silly-show-logo.png",
       "links": {
         "YouTube": "https://www.youtube.com/razzamatazzification",
         "Facebook": "https://www.facebook.com/supersillyshow",
