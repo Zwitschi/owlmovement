@@ -13,26 +13,44 @@
     {
       "heading": "Social Media",
       "links": [
-        {"label": "Instagram: @owlmovement", "url": "https://instagram.com/owlmovement"},
-        {"label": "Twitter: @corkycomedynow", "url": "https://twitter.com/corkycomedynow"},
-        {"label": "Facebook: Corky Comedy", "url": "https://facebook.com/corkycomedynow"},
-        {"label": "YouTube: Coreyowl", "url": "https://youtube.com/coreyowl"}
+        {
+          "label": "Instagram: @owlmovement",
+          "url": "https://instagram.com/owlmovement"
+        },
+        {
+          "label": "Twitter: @corkycomedynow",
+          "url": "https://twitter.com/corkycomedynow"
+        },
+        {
+          "label": "Facebook: Corky Comedy",
+          "url": "https://facebook.com/corkycomedynow"
+        },
+        { "label": "YouTube: Coreyowl", "url": "https://youtube.com/coreyowl" }
       ]
     },
     {
       "heading": "Support",
       "intro": "If you'd like to support my work:",
       "links": [
-        {"label": "Ko-Fi: Support on Ko-Fi", "url": "https://ko-fi.com/corky"},
-        {"label": "Shop: Corky Merchandise Store", "url": "https://corkstore.myspreadshop.com/"}
+        {
+          "label": "Ko-Fi: Support on Ko-Fi",
+          "url": "https://ko-fi.com/corky"
+        },
+        {
+          "label": "Shop: Corky Merchandise Store",
+          "url": "https://corkstore.myspreadshop.com/"
+        }
       ]
     },
     {
       "heading": "More Platforms",
       "links": [
-        {"label": "IMDb Profile", "url": "https://www.imdb.com/name/nm3869184/"},
-        {"label": "SoundCloud", "url": "https://soundcloud.com/owl_movement"},
-        {"label": "Twitch", "url": "https://www.twitch.tv/officialbroadcast"}
+        {
+          "label": "IMDb Profile",
+          "url": "https://www.imdb.com/name/nm3869184/"
+        },
+        { "label": "SoundCloud", "url": "https://soundcloud.com/owl_movement" },
+        { "label": "Twitch", "url": "https://www.twitch.tv/officialbroadcast" }
       ]
     }
   ],
@@ -119,36 +137,23 @@
   ],
   "projects": [
     {
-      "title": "Comedy Stains Podcast",
-      "type": "Podcast",
-      "description": "A podcast where two fully grown adults discuss the business and art of humor. Co-hosted with LA comedian Dave Sarra. Featuring deep dives into comedy, entertainment industry insights, and candid conversations about performing arts.",
-      "image": "/static/images/comedy-stains-logo.jpg",
+      "title": "Merchandise & Shop",
+      "type": "E-Commerce",
+      "description": "Official merchandise store featuring print-to-order items and branded products.",
       "links": {
-        "Anchor": "https://anchor.fm/comedystains",
-        "YouTube": "https://www.youtube.com/channel/UCLwzUapNl8f2hQi6iflw_Gg",
-        "SoundCloud": "https://soundcloud.com/comedystains",
-        "Twitter": "https://www.twitter.com/ComedyStains",
-        "Instagram": "https://www.instagram.com/ComedyStains",
-        "Facebook": "https://www.facebook.com/ComedyStains/",
-        "TikTok": "https://www.tiktok.com/@comedystains",
-        "Twitch": "https://twitch.com/comedystains"
+        "Corky Store": "https://corkstore.myspreadshop.com/"
       }
     },
     {
-      "title": "Super Silly Show",
-      "type": "Variety Show",
-      "description": "Join Corky and Beefroast as they host a variety show like no other! A weekly show featuring comedy, music, and entertainment. Available on multiple platforms including YouTube, Facebook, Twitter, Instagram, and SoundCloud.",
-      "image": "/static/images/super-silly-show-logo.png",
+      "title": "Support",
+      "type": "Support",
+      "description": "Support the work through Ko-Fi, where you can make one-time donations or subscribe for ongoing support. Your contributions help fund new projects and content creation.",
       "links": {
-        "YouTube": "https://www.youtube.com/razzamatazzification",
-        "Facebook": "https://www.facebook.com/supersillyshow",
-        "Twitter": "https://www.twitter.com/supersillyshow",
-        "Instagram": "https://www.instagram.com/supersillysundayshow",
-        "SoundCloud": "https://soundcloud.com/supersillyshow"
+        "Ko-Fi Support": "https://ko-fi.com/corky"
       }
     },
     {
-      "title": "Original Music & Soundscapes",
+      "title": "Original Music",
       "type": "Music Production",
       "description": "Creating and releasing original music under the Owl Movement and Corky Time brands. Music is available across streaming platforms including SoundCloud, with new uploads from the Corkyverse regularly added.",
       "links": {
@@ -160,27 +165,21 @@
       "title": "Comedy Videos & Content",
       "type": "Video Content",
       "description": "Comedy sketches, performances, and other video content available on YouTube. Features live shows, vlogs, interviews, and various entertainment media.",
-      "image": "/static/images/ding-dong-show-thumbnail.jpg",
       "links": {
         "Main YouTube Channel": "https://www.youtube.com/coreyowl",
         "Corkytube": "https://www.youtube.com/user/Razzamatazzification"
       }
     },
     {
-      "title": "Media & Gallery",
-      "type": "Content Gallery",
-      "description": "A collection of videos, comedy content, vlogs, interviews, music, and GIFs showcasing various projects and performances.",
+      "title": "Super Silly Show",
+      "type": "Variety Show",
+      "description": "Join Corky and Beefroast as they host a variety show like no other! A weekly show featuring comedy, music, and entertainment. Available on multiple platforms including YouTube, Facebook, Twitter, Instagram, and SoundCloud.",
       "links": {
-        "Media Gallery": "https://owlmovement.wixsite.com/coreycomedy/media"
-      }
-    },
-    {
-      "title": "Merchandise & Shop",
-      "type": "E-Commerce",
-      "description": "Official merchandise store featuring print-to-order items and branded products.",
-      "links": {
-        "Corky Store": "https://corkstore.myspreadshop.com/",
-        "Ko-Fi Support": "https://ko-fi.com/corky"
+        "YouTube": "https://www.youtube.com/razzamatazzification",
+        "Facebook": "https://www.facebook.com/supersillyshow",
+        "Twitter": "https://www.twitter.com/supersillyshow",
+        "Instagram": "https://www.instagram.com/supersillysundayshow",
+        "SoundCloud": "https://soundcloud.com/supersillyshow"
       }
     }
   ]
