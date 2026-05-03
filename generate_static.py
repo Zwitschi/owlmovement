@@ -111,6 +111,25 @@ def generate_static_site():
 
     print("-" * 60)
 
+    print("\n📄 Generating special files (robots.txt, sitemap.xml)...")
+
+    # Copy robots.txt and sitemap.xml
+    for special_file in ['robots.txt', 'sitemap.xml']:
+        try:
+            response = client.get(f'/{special_file}')
+            if response.status_code == 200:
+                (build_dir / special_file).write_text(
+                    response.data.decode('utf-8'))
+                print(
+                    f"✓ Generated {special_file} ({len(response.data):,} bytes)")
+            else:
+                print(
+                    f"✗ {special_file:20} → Error {response.status_code}")
+        except Exception as e:
+            print(f"✗ {special_file:20} → Error: {str(e)}")
+
+    print("\n✅ Static asset copying complete!")
+
     # Generate summary
     print("\n📊 Generation Summary")
     print("=" * 60)

@@ -103,6 +103,30 @@ def create_app():
                                contact_links=CONTACT_LINKS,
                                social_media=SOCIAL_MEDIA)
 
+    @app.route('/robots.txt')
+    def robots_txt():
+        """Serve robots.txt"""
+        return "User-agent: *\nAllow: /", 200, {'Content-Type': 'text/plain'}
+
+    @app.route('/sitemap.xml')
+    def sitemap_xml():
+        """Serve sitemap.xml of all pages and images"""
+        pages = ['/', '/bio', '/portfolio', '/projects', '/contact']
+        images = []
+        for project in FEATURED_PROJECTS + PORTFOLIO_ITEMS + PROJECTS:
+            if 'image' in project:
+                images.append(project['image'])
+        xml_header = '<?xml version="1.0" encoding="UTF-8"?>\n'
+        urlset_open = '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        urlset_close = '</urlset>'
+        url_entries = ''
+        for page in pages:
+            url_entries += f'  <url>\n    <loc>{request.url_root[:-1]}{page}</loc>\n  </url>\n'
+        for image in images:
+            url_entries += f'  <url>\n    <loc>{request.url_root[:-1]}{image}</loc>\n  </url>\n'
+        sitemap = xml_header + urlset_open + url_entries + urlset_close
+        return sitemap, 200, {'Content-Type': 'application/xml'}
+
     @app.errorhandler(404)
     def not_found(error):
         """Handle 404 errors"""

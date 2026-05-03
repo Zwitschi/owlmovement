@@ -135,17 +135,11 @@ Detailed project pages with multiple links. Each project includes:
 
 Social media links displayed in footer and contact page:
 
-````json
-{
-##### 5. **social_media**
-
-Social media links displayed in footer and contact page:
-
 ```json
 {
   "platform_name": "https://platform-url.com/profile"
 }
-````
+```
 
 #### metadata.json Structure
 
