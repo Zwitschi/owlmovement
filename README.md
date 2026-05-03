@@ -34,8 +34,9 @@ The website is built using **Flask**, a lightweight Python web framework. The ap
 ```text
 owlmovement/
 ├── app/
+│   ├── __init__.py         # Flask application factory
 │   ├── templates/          # Jinja2 HTML templates
-│   │   ├── _base.html       # Base template
+│   │   ├── _base.html      # Base template
 │   │   ├── index.html      # Home page
 │   │   ├── bio.html        # Biography page
 │   │   ├── portfolio.html  # Portfolio page
@@ -47,8 +48,11 @@ owlmovement/
 │       ├── js/
 │       │   └── main.js     # Main JavaScript
 │       └── images/         # Image assets
-├── run.py                  # Application entry point
+├── app.py                  # Application entry point
 ├── config.py               # Configuration settings
+├── content.json            # Dynamic content data
+├── metadata.json           # Page metadata
+├── netlify.toml            # Netlify deployment configuration
 ├── requirements.txt        # Python dependencies
 └── README.md               # This file
 ```
@@ -90,7 +94,7 @@ The Flask application provides the following routes:
 2. **Run the development server:**
 
    ```bash
-   python run.py
+   python app.py
    ```
 
 3. **Access the application:**

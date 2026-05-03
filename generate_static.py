@@ -13,7 +13,7 @@ import os
 import shutil
 from pathlib import Path
 
-from run import create_app
+from app import create_app
 
 
 def generate_static_site():
