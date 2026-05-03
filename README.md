@@ -2,9 +2,28 @@
 
 This is the repository for the Owlmovement website.
 
-## Content
+## Overview
 
-see [docs/content.md](docs/content.md) for a comprehensive documentation of all discovered content from the original website crawl, including page-specific content details and media assets.
+- [Owlmovement website](#owlmovement-website)
+  - [Overview](#overview)
+  - [Flask Application](#flask-application)
+    - [Project Structure](#project-structure)
+    - [Configuration](#configuration)
+    - [Routes](#routes)
+    - [Running the Application](#running-the-application)
+    - [Data Management](#data-management)
+      - [content.json Structure](#contentjson-structure)
+        - [1. **featured_projects**](#1-featured_projects)
+        - [2. **portfolio_items**](#2-portfolio_items)
+        - [3. **projects**](#3-projects)
+        - [4. **social_media**](#4-social_media)
+      - [metadata.json Structure](#metadatajson-structure)
+      - [Editing content.json and metadata.json](#editing-contentjson-and-metadatajson)
+    - [Static Assets](#static-assets)
+  - [Templating](#templating)
+    - [Template Structure](#template-structure)
+    - [Template Variables](#template-variables)
+    - [Usage](#usage)
 
 ## Flask Application
 
@@ -270,15 +289,3 @@ Example:
 </section>
 {% endblock %}
 ```
-
-## Metadata and SEO
-
-The website includes comprehensive SEO optimization through metadata tags and structured content management. All page-specific metadata is centralized for easy management and consistency. For detailed documentation on the metadata structure and SEO implementation, see [docs/metadata.md](docs/metadata.md).
-
-## Testing
-
-The application is tested using **pytest** and **pytest-flask** to ensure that all pages are correctly rendered, and that all images and videos are properly embedded and displayed on the pages. For detailed documentation on the testing process and test cases, see [docs/testing.md](docs/testing.md).
-
-## Static HTML Generation
-
-The website can be deployed as a static site with pre-generated HTML files. This approach provides maximum performance, security, and simplicity for hosting. For detailed documentation on the static site generation process and analysis of the generated files, see [docs/static_site.md](docs/static_site.md).
